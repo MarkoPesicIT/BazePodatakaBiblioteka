@@ -1,29 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
+      <head>
+            <meta charset="UTF-8" />
+            <meta
+                  name="viewport"
+                  content="width=device-width, initial-scale=1.0" />
+            <link rel="stylesheet" href="style.css" />
+            <link
+                  rel="stylesheet"
+                  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+            <script src="script.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <title>POCETNA</title>
+      </head>
 
-<head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="stylesheet" href="style.css" />
-      <link rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-      <script src="script.js"></script>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-      <title>POCETNA</title>
-</head>
-
-<body>
-      <aside>
-            <div class="navContainer">
-                  <div class="topNav">
-                        <div class="topNav-container">
+      <body>
+            <aside>
+                  <div class="navContainer">
+                        <div class="topNav">
+                              <div class="topNav-container">
+                                    <div class="nav">
+                                          <div
+                                                class="ikonica-container"
+                                                id="btnPocetna">
+                                                <img
+                                                      src="Materijal/Ikonice/Nav/pocetnaIcon.png"
+                                                      id="navIkonica"
+                                                      alt="ikonicaPocetna" />
+                                          </div>
+                                          <div class="ikonicaHover">
+                                                <h1 id="navText">POCETNA</h1>
+                                                <div class="navUnderline">
+                                                      <div
+                                                            class="kocka bgNav"></div>
+                                                      <div
+                                                            class="linija bgNav"></div>
+                                                </div>
+                                          </div>
+                                    </div>
+                                    <div class="nav">
+                                          <div
+                                                class="ikonica-container"
+                                                id="btnPozajmice">
+                                                <img
+                                                      src="Materijal/Ikonice/Nav/pozajmiceIcon.png"
+                                                      id="navIkonica"
+                                                      alt="ikonicaPozajmice" />
+                                          </div>
+                                          <div class="ikonicaHover">
+                                                <h1 id="navText">POZAJMICE</h1>
+                                                <div class="navUnderline">
+                                                      <div
+                                                            class="kocka bgNav"></div>
+                                                      <div
+                                                            class="linija bgNav"></div>
+                                                </div>
+                                          </div>
+                                    </div>
+                                    <div class="nav">
+                                          <div
+                                                class="ikonica-container"
+                                                id="btnClanovi">
+                                                <img
+                                                      src="Materijal/Ikonice/Nav/korisniciIcon.png"
+                                                      id="navIkonica"
+                                                      alt="ikonicaClanovi" />
+                                          </div>
+                                          <div class="ikonicaHover">
+                                                <h1 id="navText">CLANOVI</h1>
+                                                <div class="navUnderline">
+                                                      <div
+                                                            class="kocka bgNav"></div>
+                                                      <div
+                                                            class="linija bgNav"></div>
+                                                </div>
+                                          </div>
+                                    </div>
+                                    <div class="nav">
+                                          <div
+                                                class="ikonica-container"
+                                                id="btnKnjige">
+                                                <img
+                                                      src="Materijal/Ikonice/Nav/knjigeIcon.png"
+                                                      id="navIkonica"
+                                                      alt="ikonicaKnjige" />
+                                          </div>
+                                          <div class="ikonicaHover">
+                                                <h1 id="navText">KNJIGE</h1>
+                                                <div class="navUnderline">
+                                                      <div
+                                                            class="kocka bgNav"></div>
+                                                      <div
+                                                            class="linija bgNav"></div>
+                                                </div>
+                                          </div>
+                                    </div>
+                                    <div class="nav">
+                                          <div
+                                                class="ikonica-container"
+                                                id="btnAutori">
+                                                <img
+                                                      src="Materijal/Ikonice/Nav/autoriIcon.png"
+                                                      id="navIkonica"
+                                                      alt="ikonicaAutori" />
+                                          </div>
+                                          <div class="ikonicaHover">
+                                                <h1 id="navText">AUTORI</h1>
+                                                <div class="navUnderline">
+                                                      <div
+                                                            class="kocka bgNav"></div>
+                                                      <div
+                                                            class="linija bgNav"></div>
+                                                </div>
+                                          </div>
+                                    </div>
+                                    <div class="nav">
+                                          <div
+                                                class="ikonica-container"
+                                                id="btnIzdavackeKuce">
+                                                <img
+                                                      src="Materijal/Ikonice/Nav/izdavackaKucaIcon.png"
+                                                      id="navIkonica"
+                                                      alt="ikonicaIzdavackeKuce" />
+                                          </div>
+                                          <div class="ikonicaHover">
+                                                <h1 id="navText">
+                                                      IZDAV. KUCE
+                                                </h1>
+                                                <div class="navUnderline">
+                                                      <div
+                                                            class="kocka bgNav"></div>
+                                                      <div
+                                                            class="linija bgNav"></div>
+                                                </div>
+                                          </div>
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="bottomNav-container">
                               <div class="nav">
-                                    <div class="ikonica-container" id="btnPocetna">
-                                          <img src="Materijal/Ikonice/Nav/pocetnaIcon.png" id="navIkonica"
-                                                alt="ikonicaPocetna" />
+                                    <div
+                                          class="ikonica-container"
+                                          id="btnZaposleni">
+                                          <img
+                                                src="Materijal/Ikonice/Nav/ZaposleniIcon.png"
+                                                id="navIkonica"
+                                                alt="ikonicaZaposleni" />
                                     </div>
                                     <div class="ikonicaHover">
-                                          <h1 id="navText">POCETNA</h1>
+                                          <h1 id="navText">ZAPOSLENI</h1>
                                           <div class="navUnderline">
                                                 <div class="kocka bgNav"></div>
                                                 <div class="linija bgNav"></div>
@@ -31,65 +156,20 @@
                                     </div>
                               </div>
                               <div class="nav">
-                                    <div class="ikonica-container" id="btnPozajmice">
-                                          <img src="Materijal/Ikonice/Nav/pozajmiceIcon.png" id="navIkonica"
-                                                alt="ikonicaPozajmice" />
+                                    <div
+                                          class="ikonica-container"
+                                          id="btnPodesavanja">
+                                          <img
+                                                style="
+                                                      rotate: 30deg;
+                                                      scale: 1.4;
+                                                "
+                                                src="Materijal/Ikonice/Nav/podesavanjaIcon.png"
+                                                id="navIkonica"
+                                                alt="ikonicaPodesavanja" />
                                     </div>
                                     <div class="ikonicaHover">
-                                          <h1 id="navText">POZAJMICE</h1>
-                                          <div class="navUnderline">
-                                                <div class="kocka bgNav"></div>
-                                                <div class="linija bgNav"></div>
-                                          </div>
-                                    </div>
-                              </div>
-                              <div class="nav">
-                                    <div class="ikonica-container" id="btnClanovi">
-                                          <img src="Materijal/Ikonice/Nav/korisniciIcon.png" id="navIkonica"
-                                                alt="ikonicaClanovi" />
-                                    </div>
-                                    <div class="ikonicaHover">
-                                          <h1 id="navText">CLANOVI</h1>
-                                          <div class="navUnderline">
-                                                <div class="kocka bgNav"></div>
-                                                <div class="linija bgNav"></div>
-                                          </div>
-                                    </div>
-                              </div>
-                              <div class="nav">
-                                    <div class="ikonica-container" id="btnKnjige">
-                                          <img src="Materijal/Ikonice/Nav/knjigeIcon.png" id="navIkonica"
-                                                alt="ikonicaKnjige" />
-                                    </div>
-                                    <div class="ikonicaHover">
-                                          <h1 id="navText">KNJIGE</h1>
-                                          <div class="navUnderline">
-                                                <div class="kocka bgNav"></div>
-                                                <div class="linija bgNav"></div>
-                                          </div>
-                                    </div>
-                              </div>
-                              <div class="nav">
-                                    <div class="ikonica-container" id="btnAutori">
-                                          <img src="Materijal/Ikonice/Nav/autoriIcon.png" id="navIkonica"
-                                                alt="ikonicaAutori" />
-                                    </div>
-                                    <div class="ikonicaHover">
-                                          <h1 id="navText">AUTORI</h1>
-                                          <div class="navUnderline">
-                                                <div class="kocka bgNav"></div>
-                                                <div class="linija bgNav"></div>
-                                          </div>
-                                    </div>
-                              </div>
-                              <div class="nav">
-                                    <div class="ikonica-container" id="btnIzdavackeKuce">
-                                          <img src="Materijal/Ikonice/Nav/izdavackaKucaIcon.png" id="navIkonica"
-                                                alt="ikonicaIzdavackeKuce" />
-                                    </div>
-                                    <div class="ikonicaHover">
-                                          <h1 id="navText">IZDAV.
-                                                KUCE</h1>
+                                          <h1 id="navText">PODESAVANJA</h1>
                                           <div class="navUnderline">
                                                 <div class="kocka bgNav"></div>
                                                 <div class="linija bgNav"></div>
@@ -98,193 +178,278 @@
                               </div>
                         </div>
                   </div>
-                  <div class="bottomNav-container">
-                        <div class="nav">
-                              <div class="ikonica-container" id="btnZaposleni">
-                                    <img src="Materijal/Ikonice/Nav/ZaposleniIcon.png" id="navIkonica"
-                                          alt="ikonicaZaposleni" />
+            </aside>
+            <main>
+                  <section class="strana strPocetna">
+                        <div class="popupinfoKnjige">
+                              <div class="gornjiDeoIOK">
+                                    <h1>[Naziv knjige]</h1>
+                                    <button id="zatvoriInfoKnjige">
+                                          &#x274c;
+                                    </button>
                               </div>
-                              <div class="ikonicaHover">
-                                    <h1 id="navText">ZAPOSLENI</h1>
-                                    <div class="navUnderline">
-                                          <div class="kocka bgNav"></div>
-                                          <div class="linija bgNav"></div>
+                              <div class="osnovniPodaciKnjiga">
+                                    <div class="slikaOsnovniPodaciKnjiga">
+                                          <img
+                                                src="Materijal/Ikonice/Pocetna/nemaSlikeIcon.png"
+                                                alt="" />
+                                    </div>
+                                    <div class="textOsnovniPodaciKnjiga">
+                                          <h1>Autor:</h1>
+                                          <h2>
+                                                <span
+                                                      class="outputOPK autorKnjige"
+                                                      >Ime i prezime</span
+                                                >
+                                          </h2>
+                                          <hr id="linija" />
+                                          <h1>Broj Strana:</h1>
+                                          <h2>
+                                                <span
+                                                      class="outputOPK brojStranaKnjige"
+                                                      >99999</span
+                                                >
+                                          </h2>
+                                          <hr id="linija" />
+                                          <h1>Izdavacka kuca:</h1>
+                                          <h2>
+                                                <span
+                                                      class="outputOPK izdavackaKucaKnjige"
+                                                      >Izdavacka Kuca</span
+                                                >
+                                          </h2>
+                                          <hr id="linija" />
                                     </div>
                               </div>
-                        </div>
-                        <div class="nav">
-                              <div class="ikonica-container" id="btnPodesavanja">
-                                    <img style="rotate: 30deg; scale: 1.4;"
-                                          src="Materijal/Ikonice/Nav/podesavanjaIcon.png" id="navIkonica"
-                                          alt="ikonicaPodesavanja" />
-                              </div>
-                              <div class="ikonicaHover">
-                                    <h1 id="navText">PODESAVANJA</h1>
-                                    <div class="navUnderline">
-                                          <div class="kocka bgNav"></div>
-                                          <div class="linija bgNav"></div>
-                                    </div>
-                              </div>
-                        </div>
-                  </div>
-            </div>
-      </aside>
-      <main>
-            <section class="strana strPocetna">
-                  <div class="popupinfoKnjige">
-                        <div class="gornjiDeoIOK">
-                              <i class="fa-solid fa-x" id="zatvoriInfoKnjige"></i>
-                              <h1>[Naziv knjige]</h1>
-                        </div>
-                        <div class="osnovniPodaciKnjiga">
-                              <div class="slikaOsnovniPodaciKnjiga">
-                                    <img src="Materijal/Ikonice/Pocetna/nemaSlikeIcon.png" alt="">
-                              </div>
-                              <div class="textOsnovniPodaciKnjiga">
-                                    <h1>Autor:</h1>
-                                    <h2><span class="outputOPK autorKnjige">Ime i prezime</span></h2>
-                                    <hr id="linija">
-                                    <h1>Broj Strana:</h1>
-                                    <h2><span class="outputOPK brojStranaKnjige">99999</span></h2>
-                                    <hr id="linija">
-                                    <h1>Izdavacka kuca:</h1>
-                                    <h2><span class="outputOPK izdavackaKucaKnjige">Izdavacka Kuca</span></h2>
-                                    <hr id="linija">
-                              </div>
-                        </div>
-                        <div class="donjideoIOK">
-                              <div class="wrapper">
-                                    <div class="tab-wrapper">
-                                          <ul class="tabs">
-                                                <li class="tab-link active" data-tab="1">PODACI</li>
-                                                <li class="tab-link" data-tab="2">CLANOVI</li>
-                                                <li class="tab-link" data-tab="3">BIBLIOTEKA</li>
-                                          </ul>
-                                    </div>
-
-                                    <div class="content-wrapper">
-                                          <div id="tab-1" class="tab tab-content active">
-                                                <h1>Pozajmljeno primeraka:</h1>
-                                                <h2><span class="outputOPK ostaloPrimeraka">9999999999</span></h2>
-                                                <hr id="linija">
-                                                <h1>Ostalo primeraka:</h1>
-                                                <h2><span class="outputOPK ostaloPrimeraka">9999999999</span></h2>
-                                                <hr id="linija">
-                                                <h1>Ukupno primeraka:</h1>
-                                                <h2><span class="outputOPK ostaloPrimeraka">9999999999</span></h2>
+                              <div class="donjideoIOK">
+                                    <div class="wrapper">
+                                          <div class="tab-wrapper">
+                                                <ul class="tabs">
+                                                      <li
+                                                            class="tab-link active"
+                                                            data-tab="1">
+                                                            PODACI
+                                                      </li>
+                                                      <li
+                                                            class="tab-link"
+                                                            data-tab="2">
+                                                            CLANOVI
+                                                      </li>
+                                                      <li
+                                                            class="tab-link"
+                                                            data-tab="3">
+                                                            BIBLIOTEKA
+                                                      </li>
+                                                </ul>
                                           </div>
-                                          <div id="tab-2" class="tab tab-content">2</div>
-                                          <div id="tab-3" class="tab tab-content">3</div>
-                                    </div>
-                              </div>
 
-                        </div>
-
-                  </div>
-                  <div class="potvrdazadodavanjeclana">
-                        <h1>DA LI ZELIS STVARNO DODATI CLANA?</h1>
-                        <div class="potvrdiOdustani">
-                              <button class="btnPotvrdiodustani odustanidodajClana"
-                                    id="odustani_dodajClana">ODUSTANI</button>
-                              <button class="btnPotvrdiodustani potvrdidodajClana"
-                                    id="potvrdi_dodajClana">POTVRDI</button>
-                        </div>
-                  </div>
-                  <div class="pozivNaBrojPopUp">
-                        <h1>Jedinstveni poziv na broj <span id="pozivNaBroj"></span> </h1>
-                        <button id="zatvoripozivNaBrojPopUp">ZATVORI</button>
-                  </div>
-                  <div class="unos">
-                        <div class="unosbrckknjiga">
-                              <div class="unos-container">
-                                    <div class="labelUnos labelBRCK">
-                                          <label for="unosBRCK">BROJ
-                                                ČLANSKE KARTE :</label>
-                                    </div>
-                                    <div class="labelUnos labeltraziKnjigu">
-                                          <label for="unosnazivknjige">NAZOV
-                                                KNJIGE :</label>
-                                    </div>
-                              </div>
-                              <div class="unosiBox">
-                                    <input id="unosBRCK" type="text" class="unosCont BRCK"
-                                          placeholder="Unesi broj članske karte" />
-                                    <form class="search-form">
-                                          <input id="unosnazivknjige" type="text" class="unosCont search"
-                                                placeholder="Nadji knjigu po nazivu ili po ID" />
-                                          <ul class="suggestions"></ul>
-                                    </form>
-                              </div>
-                        </div>
-                        <div class="dodajClana-container">
-                              <div class="dodajclanaBG">
-                                    <img class="dodajClanaIkoncia" id="navIkonica"
-                                          src="Materijal/Ikonice/Pocetna/dodajKorisnikaDugme.png" alt />
-                              </div>
-                              <div class="dodavanjeClanaPopUp">
-                                    <h1>DODAJ ČLANA</h1>
-                                    <hr id="linija" />
-                                    <input id="unosDodajClana" type="text" class="unosCont" placeholder="Ime" />
-                                    <input id="unosDodajClana" type="text" class="unosCont" placeholder="Prezime" />
-                                    <input id="unosDodajClana" type="text" class="unosCont"
-                                          placeholder="Broj telefona" />
-                                    <input id="unosDodajClana" type="text" class="unosCont" placeholder="E-posta" />
-                                    <input id="unosDodajClana" type="date" class="unosCont datumRodjenja" placeholder="Datum rodjenja" style="color: #6a6a6a;" />
-                                    <input id="unosDodajClana" type="text" class="unosCont"
-                                          placeholder="Adresa stanovanja" />
-                                    <input id="unosDodajClana" type="text" class="unosCont" placeholder="E-posta" />
-                                    <div class="menu">
-                                          <button class="toggle unosCont">Odaberi
-                                                clanarinu</button>
-                                          <ul class="list">
-                                                <li class="list-item" style="--delay: 0.2s;">
-                                                      MESECNO GOTOVINOM
-                                                </li>
-                                                <li class="list-item" style="--delay: 0.4s;">
-                                                      MESECNO ELEKTRONSKI
-                                                </li>
-                                                <li class="list-item" style="--delay: 0.6s;">
-                                                      GODISNJE GOTOVINOM
-                                                </li>
-                                                <li class="list-item" style="--delay: 0.8s;">
-                                                      GODISNJE ELEKTRONSKI
-                                                </li>
-                                          </ul>
-                                    </div>
-
-                              
-                                    <div class="potvrdiOdustani">
-                                          <button class="btnPotvrdiodustani odustanidodajClana"
-                                                id="odustanidodajClana">ODUSTANI</button>
-                                          <button class="btnPotvrdiodustani potvrdidodajClana"
-                                                id="potvrdidodajClana">POTVRDI</button>
+                                          <div class="content-wrapper">
+                                                <div
+                                                      id="tab-1"
+                                                      class="tab tab-content active">
+                                                      <h1>
+                                                            Pozajmljeno
+                                                            primeraka:
+                                                      </h1>
+                                                      <h2>
+                                                            <span
+                                                                  class="outputOPK ostaloPrimeraka"
+                                                                  >9999999999</span
+                                                            >
+                                                      </h2>
+                                                      <hr id="linija" />
+                                                      <h1>Ostalo primeraka:</h1>
+                                                      <h2>
+                                                            <span
+                                                                  class="outputOPK ostaloPrimeraka"
+                                                                  >9999999999</span
+                                                            >
+                                                      </h2>
+                                                      <hr id="linija" />
+                                                      <h1>Ukupno primeraka:</h1>
+                                                      <h2>
+                                                            <span
+                                                                  class="outputOPK ostaloPrimeraka"
+                                                                  >9999999999</span
+                                                            >
+                                                      </h2>
+                                                </div>
+                                                <div
+                                                      id="tab-2"
+                                                      class="tab tab-content">
+                                                      2
+                                                </div>
+                                                <div
+                                                      id="tab-3"
+                                                      class="tab tab-content">
+                                                      3
+                                                </div>
+                                          </div>
                                     </div>
                               </div>
                         </div>
-                  </div>
-            </section>
-            <section class="strana strPozajmice">
-                  <h1>pozajmice</h1>
-            </section>
-            <section class="strana strClanovi">
-                  <h1>clanovi</h1>
-            </section>
-            <section class="strana strKnjige">
-                  <h1>knjige</h1>
-            </section>
-            <section class="strana strAutori">
-                  <h1>autori</h1>
-            </section>
-            <section class="strana strIzdavackeKuce">
-                  <h1>uzdav kuce</h1>
-            </section>
-            <section class="strana strZaposleni">
-                  <h1>zaposleni</h1>
-            </section>
-            <section class="strana strPodesavanja">
-                  <h1>podesvanja</h1>
-            </section>
-      </main>
-</body>
+                        <div class="potvrdazadodavanjeclana">
+                              <h1>DA LI ZELIS STVARNO DODATI CLANA?</h1>
+                              <div class="potvrdiOdustani">
+                                    <button
+                                          class="btnPotvrdiodustani odustanidodajClana"
+                                          id="odustani_dodajClana">
+                                          ODUSTANI
+                                    </button>
+                                    <button
+                                          class="btnPotvrdiodustani potvrdidodajClana"
+                                          id="potvrdi_dodajClana">
+                                          POTVRDI
+                                    </button>
+                              </div>
+                        </div>
+                        <div class="unos">
+                              <div class="unosbrckknjiga">
+                                    <div class="unos-container">
+                                          <div class="labelUnos labelBRCK">
+                                                <label for="unosBRCK"
+                                                      >BROJ ČLANSKE KARTE
+                                                      :</label
+                                                >
+                                          </div>
+                                          <div
+                                                class="labelUnos labeltraziKnjigu">
+                                                <label for="unosnazivknjige"
+                                                      >NAZOV KNJIGE :</label
+                                                >
+                                          </div>
+                                    </div>
+                                    <div class="unosiBox">
+                                          <input
+                                                id="unosBRCK"
+                                                type="text"
+                                                class="unosCont BRCK"
+                                                placeholder="Unesi broj članske karte" />
+                                          <form class="search-form">
+                                                <input
+                                                      id="unosnazivknjige"
+                                                      type="text"
+                                                      class="unosCont search"
+                                                      placeholder="Nadji knjigu po nazivu ili po ID" />
+                                                <ul class="suggestions"></ul>
+                                          </form>
+                                    </div>
+                              </div>
+                              <div class="dodajClana-container">
+                                    <div class="dodajclanaBG">
+                                          <img
+                                                class="dodajClanaIkoncia"
+                                                id="navIkonica"
+                                                src="Materijal/Ikonice/Pocetna/dodajKorisnikaDugme.png"
+                                                alt />
+                                    </div>
+                                    <div class="dodavanjeClanaPopUp">
+                                          <h1>DODAJ ČLANA</h1>
+                                          <hr id="linija" />
+                                          <input
+                                                id="imeDodajClana"
+                                                type="text"
+                                                class="unosCont"
+                                                placeholder="Ime" />
+                                          <input
+                                                id="prezimeDodajClana"
+                                                type="text"
+                                                class="unosCont"
+                                                placeholder="Prezime" />
+                                          <input
+                                                id="telefonDodajClana"
+                                                type="text"
+                                                class="unosCont"
+                                                placeholder="Broj telefona" />
+                                          <input
+                                                id="emailDodajClana"
+                                                type="text"
+                                                class="unosCont"
+                                                placeholder="E-posta" />
+                                          <input
+                                                id="datumDodajClana"
+                                                type="date"
+                                                class="unosCont datumRodjenja"
+                                                placeholder="Datum rodjenja"
+                                                style="color: #6a6a6a" />
+                                          <input
+                                                id="adresaDodajClana"
+                                                type="text"
+                                                class="unosCont"
+                                                placeholder="Adresa stanovanja" />
+                                          <div class="menu">
+                                                <button class="toggle unosCont">
+                                                      Odaberi clanarinu
+                                                </button>
+                                                <ul class="list">
+                                                      <li
+                                                            class="list-item"
+                                                            style="
+                                                                  --delay: 0.2s;
+                                                            ">
+                                                            MESECNO GOTOVINOM
+                                                      </li>
+                                                      <li
+                                                            class="list-item"
+                                                            style="
+                                                                  --delay: 0.4s;
+                                                            ">
+                                                            MESECNO ELEKTRONSKI
+                                                      </li>
+                                                      <li
+                                                            class="list-item"
+                                                            style="
+                                                                  --delay: 0.6s;
+                                                            ">
+                                                            GODISNJE GOTOVINOM
+                                                      </li>
+                                                      <li
+                                                            class="list-item"
+                                                            style="
+                                                                  --delay: 0.8s;
+                                                            ">
+                                                            GODISNJE ELEKTRONSKI
+                                                      </li>
+                                                </ul>
+                                          </div>
 
+                                          <div class="potvrdiOdustani">
+                                                <button
+                                                      class="btnPotvrdiodustani odustanidodajClana"
+                                                      id="odustanidodajClana">
+                                                      ODUSTANI
+                                                </button>
+                                                <button
+                                                      class="btnPotvrdiodustani potvrdidodajClana"
+                                                      id="potvrdidodajClana">
+                                                      POTVRDI
+                                                </button>
+                                          </div>
+                                    </div>
+                              </div>
+                        </div>
+                  </section>
+                  <section class="strana strPozajmice">
+                        <h1>pozajmice</h1>
+                  </section>
+                  <section class="strana strClanovi">
+                        <h1>clanovi</h1>
+                  </section>
+                  <section class="strana strKnjige">
+                        <h1>knjige</h1>
+                  </section>
+                  <section class="strana strAutori">
+                        <h1>autori</h1>
+                  </section>
+                  <section class="strana strIzdavackeKuce">
+                        <h1>uzdav kuce</h1>
+                  </section>
+                  <section class="strana strZaposleni">
+                        <h1>zaposleni</h1>
+                  </section>
+                  <section class="strana strPodesavanja">
+                        <h1>podesvanja</h1>
+                  </section>
+            </main>
+      </body>
 </html>
