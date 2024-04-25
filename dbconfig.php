@@ -1,20 +1,19 @@
 <?php
+$servername = "localhost"; // Change this to your database server name
+$username = "username"; // Change this to your database username
+$password = "password"; // Change this to your database password
+$database = "database_name"; // Change this to your database name
 
-$host = 'localhost';
-$username = 'root'; 
-$password = '';
-$database = 'biblioteka';
+// Create connection
+$conn = new mysqli($servername, $username, $password, $database);
 
-// Attempt to connect to the database
-$conn = new mysqli($host, $username, $password, $database);
-
-// Check if the connection was successful
+// Check connection
 if ($conn->connect_error) {
-    // If connection failed, log the error
-    echo "Failed to connect to database: " . $conn->connect_error;
     die("Connection failed: " . $conn->connect_error);
 } else {
-    // If connection succeeded, log the success
-    echo "Connected to database successfully!";
+    echo "Connected successfully\n";
 }
+
+// Close connection
+$conn->close();
 ?>
