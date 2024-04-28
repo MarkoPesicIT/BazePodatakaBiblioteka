@@ -21,9 +21,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
     }
+
+    // Close the connection after performing database operations
+    $conn->close();
 } else {
     echo "Invalid request.";
 }
-
-$conn->close();
 ?>
