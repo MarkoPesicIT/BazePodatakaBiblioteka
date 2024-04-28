@@ -42,10 +42,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $message .= "[Naziv biblioteke]\n";
     $message .= "[Kontakt informacije (broj email adresa)]";
 
-    $headers = "From: sender@example.com\r\n";
+    $from_email = "projektnibiblioteka@gmail.com";
+    $headers = "From: $from_email\r\n";
+    $headers .= "Reply-To: $from_email\r\n"; // Optionally add a reply-to address
     $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
 
-    if (mail($email, $subject, $message, $headers)) {
+    if (mail($email, $subject, $message, $headers, "-f $from_email")) {
         echo "Email sent successfully!";
     } else {
         echo "Email sending failed.";
