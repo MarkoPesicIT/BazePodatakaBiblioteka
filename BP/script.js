@@ -167,7 +167,6 @@ document.addEventListener("DOMContentLoaded", function () {
           randomNumber = generateRandomNumber();
           console.log("Generisan poziv na broj:", randomNumber);
         } while (usedNumbers.has(randomNumber));
-
         usedNumbers.add(randomNumber);
       }
     });
@@ -258,7 +257,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     $.ajax({
         type: "POST",
-        url: "../posaljiEmail.php",
         url: "../dodajClana.php",
         data: {
             ime: ime,

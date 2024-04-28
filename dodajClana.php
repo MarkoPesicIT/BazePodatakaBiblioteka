@@ -16,51 +16,51 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     switch ($clanarina) {
         case "MESECNO GOTOVINOM":
-            $cena = "500";
+            $cena = "120";
             break;
         case "MESECNO ELEKTRONSKI":
-            $cena = "450";
+            $cena = "100";
             break;
         case "GODISNJE GOTOVINOM":
-            $cena = "5000";
+            $cena = "1200";
             break;
         case "GODISNJE ELEKTRONSKI":
-            $cena = "4500";
+            $cena = "1000";
             break;
         default:
             $cena = "N/A";
             break;
     }
 
-    $subject = "Dobrodošlica u našu biblioteku";
-    $message = "Poštovani/a $ime $prezime,\n\n";
-    $message .= "Želim Vam iskreno zahvaliti što ste postali član naše biblioteke. Vaša podrška je od izuzetne važnosti za održavanje i unapređenje naših usluga, i radujemo se što ćemo biti deo Vašeg knjižnog putovanja.\n\n";
-    $message .= "Vaša odluka da postanete član biblioteke omogućava Vam pristup našoj bogatoj kolekciji knjiga, časopisa, i drugih resursa. Nadamo se da ćete uživati u istraživanju sveta literature i znanja koje smo za Vas pripremili.\n\n";
-    $message .= "Takođe, želimo da Vas obavestimo o našim mogućnostima za elektronsko plaćanje članarine. Možete odabrati da plaćate godišnju ili mesečnu članarinu putem elektronskog bankarstva. Evo detalja koji Vam mogu biti od koristi:\n\n";
-    $message .= "Članarina: $clanarina - $cena RSD\n";
-    $message .= "Molimo Vas da uplatu izvršite na sledeći bankovni račun: [Broj računa biblioteke]\n";
-    $message .= "Prilikom uplate, koristite ovaj poziv na broj: $randomNumber\n\n";
-    $message .= "Još jednom, hvala Vam što ste se pridružili našoj biblioteci. Radujemo se što ćemo zajedno graditi prostor za učenje, istraživanje i inspiraciju.\n\n";
-    $message .= "Srdačan pozdrav,\n\n";
-    $message .= "[Naziv biblioteke]\n";
-    $message .= "[Kontakt informacije (broj email adresa)]";
+    // $subject = "Dobrodošlica u našu biblioteku";
+    // $message = "Poštovani/a $ime $prezime,\n\n";
+    // $message .= "Želim Vam iskreno zahvaliti što ste postali član naše biblioteke. Vaša podrška je od izuzetne važnosti za održavanje i unapređenje naših usluga, i radujemo se što ćemo biti deo Vašeg knjižnog putovanja.\n\n";
+    // $message .= "Vaša odluka da postanete član biblioteke omogućava Vam pristup našoj bogatoj kolekciji knjiga, časopisa, i drugih resursa. Nadamo se da ćete uživati u istraživanju sveta literature i znanja koje smo za Vas pripremili.\n\n";
+    // $message .= "Takođe, želimo da Vas obavestimo o našim mogućnostima za elektronsko plaćanje članarine. Možete odabrati da plaćate godišnju ili mesečnu članarinu putem elektronskog bankarstva. Evo detalja koji Vam mogu biti od koristi:\n\n";
+    // $message .= "Članarina: $clanarina - $cena RSD\n";
+    // $message .= "Molimo Vas da uplatu izvršite na sledeći bankovni račun: [Broj računa biblioteke]\n";
+    // $message .= "Prilikom uplate, koristite ovaj poziv na broj: $randomNumber\n\n";
+    // $message .= "Još jednom, hvala Vam što ste se pridružili našoj biblioteci. Radujemo se što ćemo zajedno graditi prostor za učenje, istraživanje i inspiraciju.\n\n";
+    // $message .= "Srdačan pozdrav,\n\n";
+    // $message .= "[Naziv biblioteke]\n";
+    // $message .= "[Kontakt informacije (broj email adresa)]";
 
-    $from_email = "projektnibiblioteka@gmail.com";
-    $headers = "From: $from_email\r\n";
-    $headers .= "Reply-To: $from_email\r\n"; // Optionally add a reply-to address
-    $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
+    // $from_email = "projektnibiblioteka@gmail.com";
+    // $headers = "From: $from_email\r\n";
+    // $headers .= "Reply-To: $from_email\r\n";
+    // $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
 
-    if (mail($email, $subject, $message, $headers, "-f $from_email")) {
-        echo "Email sent successfully!";
-    } else {
-        echo "Email sending failed.";
-    }
+    // if (mail($email, $subject, $message, $headers, "-f $from_email")) {
+    //     echo "Email sent successfully!";
+    // } else {
+    //     echo "Email sending failed.";
+    // }
 
-    if ($conn->query($sql) === TRUE) {
-        echo "New record inserted successfully";
-    } else {
-        echo "Error: " . $sql . "<br>" . $conn->error;
-    }
+    // if ($conn->query($sql) === TRUE) {
+    //     echo "New record inserted successfully";
+    // } else {
+    //     echo "Error: " . $sql . "<br>" . $conn->error;
+    // }
 } else {
     echo "Invalid request.";
 }
