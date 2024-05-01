@@ -254,7 +254,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Generate random number
     const randomNumber = generateRandomNumber();
-
+    console.log(xhr.status)
     $.ajax({
         type: "POST",
         url: "../dodajClana.php",
@@ -279,12 +279,16 @@ document.addEventListener("DOMContentLoaded", function () {
             console.log("Clanarina" + clanarina);
             console.log("Poziv na broj" + randomNumber);
             console.log("Email sent successfully!");
+            console.log("AJAX request successful");
+            console.log(response); // Log the response from the server
             console.log("-----------------------------------------------------------------------");
 
         },
         error: function (xhr, status, error) {
             // Handle error response
             console.error("Email sending failed.");
+            console.error("AJAX request failed");
+            console.error(error); // Log the error message
         },
     });
 
