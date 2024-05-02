@@ -1,0 +1,2 @@
+napraviti cuvanje sviuh generisanih poziva na broj u txt file i proci kroz njega da se vidi za duplikate
+validacija za email i broj telefona(ne sme biti isti)
