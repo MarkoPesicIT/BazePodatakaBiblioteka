@@ -254,6 +254,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Generate random number
     const randomNumber = generateRandomNumber();
+    var xhr = new XMLHttpRequest();
     console.log(xhr.status)
     $.ajax({
         type: "POST",
@@ -295,4 +296,8 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log("Klinuto dugme za potvrdjivanje od kreiranja novog clana");
 });
 
+      
+$(function(){
+      $('table').tablesorter(); 
+    });
 });
