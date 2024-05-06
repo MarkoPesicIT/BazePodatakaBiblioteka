@@ -284,7 +284,7 @@ document.addEventListener("DOMContentLoaded", function () {
             console.log("-----------------------------------------------------------------------");
 
         },
-        error: function (xhr, status, error) {
+        error: function (error) {
             // Handle error response
             console.error("Email sending failed.");
             console.error("AJAX request failed");
@@ -295,4 +295,33 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log("Klinuto dugme za potvrdjivanje od kreiranja novog clana");
 });
 
+const btnPozajmi = this.getElementById('btnPozajmi');
+
+btnPozajmi.addEventListener('click', () => {
+  console.log("Kliknuto dugme za pozajmljivanje knjige");
+  // funkcija za prAvljenje pozajmicew dodaj ovdde sta streba
+});
+
+
+// pokazivanje pozajmice
+  fetch('../getPozajmice.php')
+  .then(response => response.json())
+  .then(data => {
+      const table = document.getElementById('tabelaPozajmica');
+      
+      data.forEach(row => {
+          const tr = document.createElement('tr');
+          tr.innerHTML = `
+              <td>${row.stanje}</td>
+              <td>${row.br_clanske_karte}</td>
+              <td>${row.naziv_knjige}</td>
+              <td>${row.inv_broj}</td>
+              <td>${row.datum_pozajmice}</td>
+              <td>${row.datum_povratka}</td>
+              <td>${row.beleska}</td>
+          `;
+          table.appendChild(tr);
+      });
+  })
+  .catch(error => console.error('Error:', error));
 });
