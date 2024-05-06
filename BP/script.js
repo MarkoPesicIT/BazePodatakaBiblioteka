@@ -254,7 +254,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Generate random number
     const randomNumber = generateRandomNumber();
-    console.log(xhr.status)
+    console.log("Nasumican broj: "+randomNumber);
     $.ajax({
         type: "POST",
         url: "../dodajClana.php",
@@ -266,7 +266,7 @@ document.addEventListener("DOMContentLoaded", function () {
             datumRodjenja: datumRodjenja,
             adresaStanovanja: adresaStanovanja,
             clanarina: clanarina,
-            pozivnabroj: randomNumber,
+            pozivnabroj: 1234,
         },
         success: function (response) {
             console.log("------------------------------SLANJE EMAILA-----------------------------------------");

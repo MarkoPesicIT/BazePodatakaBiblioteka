@@ -12,20 +12,21 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $ePosta = $_POST['email'];
     $datumUclanjenja = date("Y-m-d"); // Changed date format to YYYY-MM-DD
     $datumRodjenja = $_POST['datumRodjenja'];
-    $pozivnabroj = $_POST['randomNumber'];
+    $pozivnabroj = 1234;
+    $napraviozaposleni = 1;
 
-
-    $sql = "INSERT INTO clan (ime, prezime, brojTelefona, adresaStanovanja, ePosta, datumUclanjenja, datumRodjenja, poziv_na_broj) 
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
+    echo "Ovo je danasnji datum: $datumUclanjenja";
+    $sql = "INSERT INTO clan (ime, prezime, brojTelefona, adresaStanovanja, ePosta, datumUclanjenja, datumRodjenja, poziv_na_broj, napravio_zaposleni) 
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
     
     $stmt = $conn->prepare($sql);
     
-    $stmt->bind_param("ssssssss", $ime, $prezime, $brojTelefona, $adresaStanovanja, $ePosta, $datumUclanjenja, $datumRodjenja, $pozivnabroj);
+    $stmt->bind_param("sssssssii", $ime, $prezime, $brojTelefona, $adresaStanovanja, $ePosta, $datumUclanjenja, $datumRodjenja, $pozivnabroj, $napraviozaposleni);
     
     if ($stmt->execute()) {
         echo "New record inserted successfully";
     } else {
-        echo "Error: " . $sql . "<br>" . $conn->error;
+        echo "Error: " . $sql . $conn->error;
     }
     
     // Close statement and connection
