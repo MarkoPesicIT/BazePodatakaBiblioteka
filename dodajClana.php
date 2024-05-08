@@ -9,9 +9,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $brojTelefona = $_POST['brojTelefona'];
     $adresaStanovanja = $_POST['adresaStanovanja'];
     $ePosta = $_POST['email'];
-    $datumUclanjenja = date("Y-m-d"); // Changed date format to YYYY-MM-DD
+    $datumUclanjenja = date("Y-m-d");
     $datumRodjenja = $_POST['datumRodjenja'];
-    $pozivnabroj = 1234;
+    $pozivnabroj = 12345;
     $napraviozaposleni = 1;
 
     echo "Ovo je danasnji datum: $datumUclanjenja";
