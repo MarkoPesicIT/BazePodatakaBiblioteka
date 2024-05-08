@@ -318,6 +318,36 @@ aside:hover .ikonicaHover
 	animation: kliknuto 0.3s;
   }
 
+
+  .btnKreairanClan{
+	padding: 0.3rem 1rem 0.3rem 1rem !important;
+
+  }
+
+  .popupUspesnoDodatClan{
+	display: flex;
+	opacity: 0;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 16rem;
+	height: 9rem;
+	border-radius: 1rem;
+	border-bottom: 0.4rem solid var(--primary);
+	border-top: 0.2rem solid var(--primary);
+	background-color: rgb(250, 250, 250);
+	box-shadow: var(--box-shadow-07);
+	transition: opacity 0.3s ease;
+  }
+
+  .popupUspesnoDodatClan.active{
+      opacity: 1;
+      z-index: 1;
+  }
 .labelUnos
 {
 	width: -moz-fit-content;
@@ -629,6 +659,7 @@ span.population
 
 .pozivNaBrojPopUp
 {
+      z-index: -1;
 	display: flex;
 	opacity: 0;
 	flex-direction: column;
@@ -687,6 +718,7 @@ span.population
 
 .potvrdazadodavanjeclana
 {
+      z-index: -1;
 	padding: 1rem;
 	position: absolute;
 	top: 50%;
@@ -711,6 +743,7 @@ span.population
 .potvrdazadodavanjeclana.active
 {
 	opacity: 1;
+      z-index: 100;
 }
 
 .popupinfoKnjige
@@ -906,9 +939,8 @@ span.population
 }
 
 .tabelaPozajmica{
-	width: 75%;
+      width: 100%;
 	height: 100%;
-	border-right: 0.3rem solid var(--primary);
 }
 
 .tbHeader{
@@ -921,9 +953,8 @@ span.population
 .headerCOL{
 	letter-spacing: 0.1rem;
 	font-weight: 600;
-	font-size: 1.2rem;
+	font-size: 0.9rem;
 	padding: 0.5rem 1rem 0.5rem 1rem;
-	border-right: 0.3rem solid #1790D2;
 }
 
 .hcolLast{
@@ -934,6 +965,38 @@ span.population
 	flex-direction: row;
 }
 
-.tabelaPozajmica{
-	
-}
+#tabelaPozajmica {
+      width: 100%;
+      max-height: 100%;
+      overflow-y: scroll;
+      border-collapse: collapse; /* Add this to remove spacing between cells */
+  }
+  
+  #tabelaPozajmica tr {
+      border-bottom: 0.1rem solid #1790D2; 
+      width: 100%;
+  }
+  
+  #tabelaPozajmica td {
+      padding: 0.2rem 0.5rem;
+      border-left: 0.3rem solid #1790D2; /* Add border to the left of each cell */
+      text-align: center; /* Optional: Center align text within cells */
+  }
+  
+  /* Style for the last column */
+  #tabelaPozajmica td:last-child {
+      border-right: none; /* Add border to the right of the last cell */
+  }
+
+  #tabelaPozajmica td:first-child {
+      border-left: none; /* Add border to the right of the last cell */
+  }
+  
+  /* Alternating row colors */
+  #tabelaPozajmica tr:nth-child(even) {
+      background-color: #f2f2f2; /* Lighter background color for even rows */
+  }
+
+  
+  
+  

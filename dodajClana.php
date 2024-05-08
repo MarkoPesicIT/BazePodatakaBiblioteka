@@ -23,12 +23,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $stmt->bind_param("sssssssii", $ime, $prezime, $brojTelefona, $adresaStanovanja, $ePosta, $datumUclanjenja, $datumRodjenja, $pozivnabroj, $napraviozaposleni);
     
     if ($stmt->execute()) {
-        echo "New record inserted successfully";
+        echo "Novi clan je uspesno dodat u bayu";
     } else {
         echo "Error: " . $sql . $conn->error;
     }
     
-    // Close statement and connection
     $stmt->close();
     $conn->close();
     
