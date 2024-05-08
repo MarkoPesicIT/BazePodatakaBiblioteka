@@ -951,6 +951,8 @@ span.population
 }
 
 .headerCOL{
+	background-color: white;
+	position: sticky;
 	letter-spacing: 0.1rem;
 	font-weight: 600;
 	font-size: 0.9rem;
@@ -964,12 +966,14 @@ span.population
 .strPozajmice{
 	flex-direction: row;
 }
-
+.tablePozajmiceCont{
+	height: 100%;
+	overflow-y: scroll;
+}
 #tabelaPozajmica {
+	height: 10rem;
       width: 100%;
-      max-height: 100%;
-      overflow-y: scroll;
-      border-collapse: collapse; /* Add this to remove spacing between cells */
+      border-collapse: collapse;
   }
   
   #tabelaPozajmica tr {
@@ -979,22 +983,20 @@ span.population
   
   #tabelaPozajmica td {
       padding: 0.2rem 0.5rem;
-      border-left: 0.3rem solid #1790D2; /* Add border to the left of each cell */
-      text-align: center; /* Optional: Center align text within cells */
+      border-left: 0.3rem solid #1790D2;
+      text-align: center;
   }
   
-  /* Style for the last column */
   #tabelaPozajmica td:last-child {
-      border-right: none; /* Add border to the right of the last cell */
+      border-right: none;
   }
 
   #tabelaPozajmica td:first-child {
-      border-left: none; /* Add border to the right of the last cell */
+      border-left: none; 
   }
   
-  /* Alternating row colors */
   #tabelaPozajmica tr:nth-child(even) {
-      background-color: #f2f2f2; /* Lighter background color for even rows */
+      background-color: #f2f2f2;
   }
 
   
