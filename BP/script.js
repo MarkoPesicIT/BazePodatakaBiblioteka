@@ -341,17 +341,14 @@ document.addEventListener("DOMContentLoaded", function () {
                   var firstCell = row.querySelector("td:first-child");
                   var firstCellText = firstCell.textContent.trim();
                   switch (firstCellText) {
-                        case "NIJE POZAJMLJENO":
-                              firstCell.style.backgroundColor = "yellow";
+                        case "NA STANJU":
+                              firstCell.style.backgroundColor = "green";
                               break;
                         case "POZAJMLJENO":
                               firstCell.style.backgroundColor = "blue";
                               break;
                         case "KASNI":
                               firstCell.style.backgroundColor = "orange";
-                              break;
-                        case "NIJE VRACENO":
-                              firstCell.style.backgroundColor = "red";
                               break;
                         default:
                               break;
@@ -376,5 +373,4 @@ document.addEventListener("DOMContentLoaded", function () {
                   }
             }
       }
-
 });
