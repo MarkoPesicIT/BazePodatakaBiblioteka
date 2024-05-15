@@ -1,0 +1,205 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header nav a {
+    color: #fff;
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px 0;
+}
+
+main .container {
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.komponente-lista {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.komponenta {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    flex: 1 1 calc(33.333% - 40px);
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.komponenta h3 {
+    margin-top: 0;
+}
+
+.komponenta form {
+    margin-top: 10px;
+}
+
+.komponenta form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.komponenta form input {
+    width: calc(100% - 10px);
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.komponenta form button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.komponenta form button:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.form-style {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-style h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-style label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-style input[type="text"],
+.form-style input[type="number"],
+.form-style textarea {
+    width: calc(100% - 12px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-style textarea {
+    height: 100px;
+}
+
+.form-style button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    display: block;
+}
+
+.form-style button[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* Dodatne stilizacije */
+
+/* Unos polja */
+.form-style input[type="text"],
+.form-style input[type="number"],
+.form-style textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.form-style input[type="text"]:focus,
+.form-style input[type="number"]:focus,
+.form-style textarea:focus {
+    border-color: #555;
+}
+
+/* Dugme */
+.form-style button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 14px 20px;
+    margin-top: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.form-style button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Dodatni stil za header i footer */
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}

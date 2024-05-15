@@ -1,0 +1,108 @@
+/* Reset CSS */
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+  
+  body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+  }
+  
+  .container {
+      display: flex;
+      flex-direction: row;
+      gap: 3rem;
+      width: 70%;
+      margin: 0 auto;
+      padding: 20px;
+  }
+  
+  h1 {
+      text-align: center;
+      margin-bottom: 20px;
+  }
+  
+  .car, .booking, .user {
+      background-color: #fff;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .car h2, .booking p, .user p {
+      margin-bottom: 5px;
+  }
+  
+  .car button, .booking button, .cancel-booking-button {
+      padding: 5px 10px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+  }
+  
+  .car button:hover, .booking button:hover, .cancel-booking-button:hover {
+      background-color: #0056b3;
+  }
+  
+  /* Dodatak na prethodni CSS */
+
+.modal {
+      display: block;
+      padding-top: 60px; /* Pomicanje sadržaja prema dolje */
+  }
+  
+  .modal-content {
+      background-color: #fefefe;
+      margin: 5% auto; /* Centralizacija forme */
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%; /* Širina forme */
+  }
+  
+  .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+  }
+  
+  label {
+      display: block;
+      margin-bottom: 10px;
+  }
+  
+  input[type="text"],
+  input[type="email"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+  }
+  
+  button[type="submit"] {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      padding: 10px 20px;
+      cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+      background-color: #0056b3;
+  }
+  
